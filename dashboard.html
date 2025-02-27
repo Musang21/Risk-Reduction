@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  
+  <nav>
+    
+    <img src="riskreduction.png" class="risk-reduction-logo" alt="Risk Reduction Logo">
+    <div onclick="baranimation(this)">
+      <div class="span-bar" onclick="openmenu()">
+        <div class="bar-right"></div>
+        <div class="bar-short"></div>
+        <div class="bar-left"></div>
+      </div>
+    </div>
+    
+    <ul id="openlink">
+      <li><a href=""><i class="ri-home-4-line icon-menu"></i>Home</a></li>
+      <li><a href=""><i class="ri-folders-line icon-menu"></i>Risk Reports</a></li>
+      <li><a href=""><i class="ri-map-pin-line icon-menu"></i>Map</a></li>
+      <li><a href=""><i class="ri-user-3-line icon-menu"></i>User Management</a></li>
+      <li><a href=""><i class="ri-settings-3-line icon-menu"></i>Settings</a></li>
+      <li><a href="index.html"><i class="ri-arrow-left-line icon-menu"></i>Log out</a></li>
+    </ul>
+    
+  </nav>
+  
+    <div class="alert-container" id="alerton">
+      <img src="Construc.gif" class="alert-construct">
+      <h3>Invalid Output</h3>
+      <p class="alert-text">Hold on, we keep building!</p>
+      <button class="button-alert" onclick="alertclose()">Ok</button>
+    </div>
+  
+  <script>
+  
+ let openlink = document.getElementById("openlink")
+        openlink.style.maxHeight = "0px";
+  
+  </script>
+  
+  <script>
+  let alertnotif = document.getElementById("alerton");
+
+  window.onload = function() {
+    setTimeout(function() {
+        let alertnotif = document.getElementById("alerton");
+        alertnotif.classList.add("open-alert");
+    }, 1000);
+};
+
+  function alertclose() {
+  alertnotif.classList.remove("open-alert");
+  }
+  </script>
+</body>
+</html>
