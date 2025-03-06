@@ -271,8 +271,6 @@
   body
   {
     font-size:13px;
-    justify-content:center;
-    display:flex;
     font-style:'Poppins', san-serif;
     background-color:#23282E;
   }
@@ -297,6 +295,10 @@
     padding:20px;
     background-color:#000;
     top:50%;
+    justify-content:center;
+    text-align:center;
+    display:flex;
+    margin-top:50%;
   }
   .icon-admin
   {
