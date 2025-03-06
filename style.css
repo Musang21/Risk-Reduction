@@ -305,10 +305,11 @@
   .admin-text
   {
     color:#fff;
+    letter-spacing:1px;
     text-transform:uppercase;
     margin:10px 0 0 0;
     font-weight:600;
-    font-size:14px;
+    font-size:15px;
   }
   .label-text
   {
@@ -322,7 +323,6 @@
   {
     color:#fff;
     font-size:16px;
-    letter-spacing:1px;
   }
   .input-text
   {
