@@ -4,8 +4,6 @@
   body
   {
     font-size:12px;
-    justify-content:center;
-    display:flex;
     font-family: 'Poppins', san-serif;
     background-color:#23282E;
     height:100%;
@@ -29,7 +27,7 @@
     width:360px;
     border:1px solid #000;
     border-radius:5px;
-    margin-top:30%;
+    margin:30% auto 0 auto;
     padding:20px;
     background-color:#000;
   }
